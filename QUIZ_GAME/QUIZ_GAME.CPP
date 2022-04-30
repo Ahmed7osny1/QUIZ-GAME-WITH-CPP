@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include <conio.h>
+#include <Windows.h>
 using namespace std;
 
 void GameDisplay();
@@ -7,6 +8,9 @@ void round1();
 void round2();
 void Final_round();
 void correct_answer(int round_no, int level);
+void wrong_answer(int round_no, int level);
+char withdrawing(int round_no, int level);
+char Timer(int round_no, int level);
 
 int main()
 {
@@ -83,18 +87,15 @@ void round1()
                  << "C.jaipur "
                  << "D.pilani" << endl;
 
-            opt = toupper(getch());
+            opt = toupper(Timer(1, 0));
 
             if (opt == 'B')
             {
                 correct_answer(1, 1);
-                break;
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(1, 1);
             }
         }
         break;
@@ -108,18 +109,15 @@ void round1()
                  << "C.outstanding "
                  << "D.rubbish" << endl;
 
-            opt = toupper(getch());
-            
+            opt = toupper(Timer(1, 0));
+
             if (opt == 'A')
             {
                 correct_answer(1, 2);
-                break;
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(1, 1);
             }
         }
         break;
@@ -132,18 +130,15 @@ void round1()
                  << "C.jaipur "
                  << "D.pi" << endl;
 
-            opt = toupper(getch());
+            opt = toupper(Timer(1, 0));
 
             if (opt == 'A')
             {
                 correct_answer(1, 3);
-                break;
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(1, 1);
             }
         }
         break;
@@ -155,17 +150,16 @@ void round1()
                  << " B.IIRS "
                  << "C.BITS "
                  << "D.me" << endl;
-            opt = toupper(getch());
+
+            opt = toupper(Timer(1, 0));
+
             if (opt == 'A')
             {
                 correct_answer(1, 4);
-                break;
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(1, 1);
             }
         }
         break;
@@ -177,17 +171,16 @@ void round1()
                  << " B.none of my business "
                  << "C.4 "
                  << "D.3" << endl;
-            opt = toupper(getch());
+
+            opt = toupper(Timer(1, 0));
+
             if (opt == 'D')
             {
-                correct_answer(1,5);
-                break;
+                correct_answer(1, 5);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(1, 1);
             }
         }
         break;
@@ -219,19 +212,15 @@ void round2()
                  << "C.jaipur "
                  << "D.pilani" << endl;
 
-            opt = toupper(getch());
-            if (opt == 'B')
+            opt = toupper(withdrawing(2, 1));
+
+            if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(2, 2);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(2, 1);
             }
         }
         break;
@@ -244,19 +233,16 @@ void round2()
                  << " B.excellent "
                  << "C.outstanding "
                  << "D.rubbish" << endl;
-            opt = toupper(getch());
+
+            opt = toupper(withdrawing(2, 2));
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(2, 4);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(2, 1);
             }
         }
         break;
@@ -268,19 +254,16 @@ void round2()
                  << " B.deh "
                  << "C.jaipur "
                  << "D.pi" << endl;
-            opt = toupper(getch());
+
+            opt = toupper(withdrawing(2, 4));
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(2, 8);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(2, 1);
             }
         }
         break;
@@ -292,19 +275,16 @@ void round2()
                  << " B.IIRS "
                  << "C.BITS "
                  << "D.me" << endl;
-            opt = toupper(getch());
+
+            opt = toupper(withdrawing(2, 8));
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(2, 16);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(2, 1);
             }
         }
         break;
@@ -316,19 +296,16 @@ void round2()
                  << " B.none of my business "
                  << "C.4 "
                  << "D.3" << endl;
-            opt = toupper(getch());
-            if (opt == 'D')
+
+            opt = toupper(withdrawing(2, 16));
+
+            if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(2, 5);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(2, 1);
             }
         }
         break;
@@ -360,19 +337,15 @@ void Final_round()
                  << "C.jaipur "
                  << "D.pilani" << endl;
 
-            opt = toupper(getch());
-            if (opt == 'B')
+            opt = withdrawing(3, 32);
+
+            if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(3, 64);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(3, 1);
             }
         }
         break;
@@ -385,19 +358,16 @@ void Final_round()
                  << " B.excellent "
                  << "C.outstanding "
                  << "D.rubbish" << endl;
-            opt = toupper(getch());
+
+            opt = withdrawing(3, 64);
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(3, 125);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(3, 1);
             }
         }
         break;
@@ -409,19 +379,16 @@ void Final_round()
                  << " B.deh "
                  << "C.jaipur "
                  << "D.pi" << endl;
-            opt = toupper(getch());
+
+            opt = withdrawing(3, 125);
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(3, 250);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(3, 1);
             }
         }
         break;
@@ -433,19 +400,16 @@ void Final_round()
                  << " B.IIRS "
                  << "C.BITS "
                  << "D.me" << endl;
-            opt = toupper(getch());
+
+            opt = withdrawing(3, 250);
+
             if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(3, 500);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(3, 1);
             }
         }
         break;
@@ -457,19 +421,16 @@ void Final_round()
                  << " B.none of my business "
                  << "C.4 "
                  << "D.3" << endl;
-            opt = toupper(getch());
-            if (opt == 'D')
+
+            opt = withdrawing(3, 500);
+
+            if (opt == 'A')
             {
-                cout << "correct";
-                count++;
-                getch();
-                break;
+                correct_answer(3, 1000);
             }
             else
             {
-                cout << "wrong";
-                getch();
-                break;
+                wrong_answer(3, 1);
             }
         }
         break;
@@ -482,25 +443,29 @@ void correct_answer(int round_no, int level)
 
     if (round_no == 1)
     {
-        if (level <= 3)
+        if (level != 5)
         {
+            system("cls");
             cout << "correct";
             cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
             cout << "\t\tyou have $ " << level * 100;
             getch();
         }
-        else if (level == 4)
-        {
-            cout << "correct";
-            cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
-            cout << "\t\tyou have $400 ";
-            getch();
-        }
     }
+    else
+    {
+        system("cls");
+        cout << "correct";
+        cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+        cout << "\t\tyou have $ " << level * 1000 << "\n";
+        getch();
+    }
+
     if (level == 5)
     {
         if (round_no == 1)
         {
+            system("cls");
             cout << "correct";
             cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
             cout << "\t\tyou have $1000 ";
@@ -509,8 +474,148 @@ void correct_answer(int round_no, int level)
             cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
             cout << "\t\tyou reach round 2 \n";
             getch();
-            // round2();
+            round2();
+        }
+
+        else if (round_no == 2)
+        {
+            system("cls");
+            cout << "correct";
+            cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+            cout << "\t\tyou have $32000 ";
+            getch();
+            system("cls");
+            cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+            cout << "\t\tyou reach Final round \n";
+            getch();
+            Final_round();
+        }
+
+        else
+        {
+            cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+            cout << "\t\tyou become Millioner \n";
+            char op;
+            cout << "If you play again press Y\nIf no press any thing\n";
+            cin >> op;
+            if (toupper(op) == 'Y')
+            {
+                GameDisplay();
+            }
+            else
+            {
+                exit(1);
+            }
         }
     }
 }
 
+void wrong_answer(int round_no, int level)
+{
+
+    char op;
+
+    if (round_no == 1)
+    {
+        system("cls");
+        if (level == 0)
+        {
+            cout << "Time Finished\n";
+        }
+        else
+        {
+            cout << "wrong\n";
+        }
+        cout << "You Have $ 0\n\n";
+    }
+
+    if (round_no == 2)
+    {
+        system("cls");
+        if (level == 0)
+        {
+            cout << "Time Finished\n";
+        }
+        else
+        {
+            cout << "wrong\n";
+        }
+        cout << "You Have $1000 \n\n";
+    }
+
+    if (round_no == 3)
+    {
+        system("cls");
+        if (level == 0)
+        {
+            cout << "Time Finished\n";
+        }
+        else
+        {
+            cout << "wrong\n";
+        }
+        cout << "You Have $32000 \n\n";
+    }
+
+    cout << "If you play again press Y\nIf no press any thing\n";
+    cin >> op;
+    if (toupper(op) == 'Y')
+    {
+        GameDisplay();
+    }
+    else
+    {
+        exit(1);
+    }
+}
+
+char withdrawing(int round_no, int level)
+{
+    char op;
+    cout << "IF you want to withdrawing and take money of level you reach press y"
+         << "\n\nIF you want not to contune press any thing\n\n";
+
+    cin >> op;
+    if (toupper(op) == 'Y')
+    {
+        cout << "\nTimer Starts\n\n";
+        return Timer(round_no, 0);
+    }
+    else
+    {
+        system("cls");
+        cout << "\n\nI Hope you select good choose\n\n";
+        cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+        cout << "\t\tyou have $ " << level * 1000;
+
+        cout << "\n\nIf you play again press Y\nIf no press any thing\n";
+        cin >> op;
+        if (toupper(op) == 'Y')
+        {
+            GameDisplay();
+        }
+        else
+        {
+            exit(1);
+        }
+    }
+}
+
+char Timer(int round_no, int level)
+{
+    int i = 0;
+    for (size_t i = 1; i <= 20; i++)
+    {
+        Sleep(1000);
+        cout << "\r" << setw(50)
+             << "|" << i << "|";
+        if (i == 20)
+        {
+            wrong_answer(round_no, level);
+        }
+        if (kbhit())
+            break;
+    }
+    // else return the value stored in keyboard buffer.
+    return getch();
+}
