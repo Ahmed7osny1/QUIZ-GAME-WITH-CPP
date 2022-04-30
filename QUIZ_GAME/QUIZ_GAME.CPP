@@ -80,16 +80,12 @@ void round1()
         {
         case 1: // question 1 of round 1
         {
-            cout << "where is IIRS?" << endl;
-            cout << "A.Delhi"
-                 << " "
-                 << " B.dehradun "
-                 << "C.jaipur "
-                 << "D.pilani" << endl;
+            cout << "1. Which one of the following is a keyword?\n";
+            cout << "(A) Size \n(B) Key \n(C) Jump \n(D) Switch\n";
 
             opt = toupper(Timer(1, 0));
 
-            if (opt == 'B')
+            if (opt == 'D')
             {
                 correct_answer(1, 1);
             }
@@ -102,16 +98,12 @@ void round1()
 
         case 2: // question 2 of round 1
         {
-            cout << "opposite of good?" << endl;
-            cout << "A.bad"
-                 << " "
-                 << " B.excellent "
-                 << "C.outstanding "
-                 << "D.rubbish" << endl;
+            cout << "The modulus operator uses ___ character.\n";
+            cout << "(A) + \n(B) * \n(C) / \n(D) % \n";
 
             opt = toupper(Timer(1, 0));
 
-            if (opt == 'A')
+            if (opt == 'D')
             {
                 correct_answer(1, 2);
             }
@@ -123,12 +115,9 @@ void round1()
         break;
         case 3: // question 3 of round 1
         {
-            cout << "palindrome?" << endl;
-            cout << "A.tht"
-                 << " "
-                 << " B.deh "
-                 << "C.jaipur "
-                 << "D.pi" << endl;
+            cout << "What is a constant that contains a single character enclosed within single quotes?\n";
+
+            cout << "(A) Character \n(B) Numeric \n(C) Fixed \n(D) Floating point\n";
 
             opt = toupper(Timer(1, 0));
 
@@ -144,16 +133,12 @@ void round1()
         break;
         case 4: // question 4 of round 1
         {
-            cout << "what rocks?" << endl;
-            cout << "A.rock"
-                 << " "
-                 << " B.IIRS "
-                 << "C.BITS "
-                 << "D.me" << endl;
+            cout << "Every variable should be separated by ___ separator.\n";
+            cout << "(A) Dot \n(B) Colon \n(C) Comma \n(D) Semicolon \n";
 
             opt = toupper(Timer(1, 0));
 
-            if (opt == 'A')
+            if (opt == 'C')
             {
                 correct_answer(1, 4);
             }
@@ -165,16 +150,12 @@ void round1()
         break;
         case 5: // question 5 of round 1
         {
-            cout << "how many domestic campuses does bits have?" << endl;
-            cout << "A.2"
-                 << " "
-                 << " B.none of my business "
-                 << "C.4 "
-                 << "D.3" << endl;
+            cout << "C++ was developed by ___ \n";
+            cout << "(A) Thomas Kushz \n(B) John Kemney \n(C) Bjarne Stroutstrup \n(D) James Goling \n";
 
             opt = toupper(Timer(1, 0));
 
-            if (opt == 'D')
+            if (opt == 'C')
             {
                 correct_answer(1, 5);
             }
@@ -205,12 +186,8 @@ void round2()
         {
         case 1: // question 1 of round 1
         {
-            cout << "where is IIRS?" << endl;
-            cout << "A.Delhi"
-                 << " "
-                 << " B.dehradun "
-                 << "C.jaipur "
-                 << "D.pilani" << endl;
+            cout << "Logical AND (&&) and Logical OR (||) are ___ operators. \n";
+            cout << "(A) Logical \n(B) Equality \n(C) Class member \n(D) Comma \n";
 
             opt = toupper(withdrawing(2, 1));
 
@@ -227,16 +204,12 @@ void round2()
 
         case 2: // question 2 of round 1
         {
-            cout << "opposite of good?" << endl;
-            cout << "A.bad"
-                 << " "
-                 << " B.excellent "
-                 << "C.outstanding "
-                 << "D.rubbish" << endl;
+            cout << "____ operators have lower precedence to relational and arithmetic operators.\n";
+            cout << "(A) Conditional \n(B) Boolean \n(C) Logical \n(D) Relational \n";
 
             opt = toupper(withdrawing(2, 2));
 
-            if (opt == 'A')
+            if (opt == 'D')
             {
                 correct_answer(2, 4);
             }
@@ -248,16 +221,12 @@ void round2()
         break;
         case 3: // question 3 of round 1
         {
-            cout << "palindrome?" << endl;
-            cout << "A.tht"
-                 << " "
-                 << " B.deh "
-                 << "C.jaipur "
-                 << "D.pi" << endl;
+            cout << "Float and double are related to ____ data type.\n";
+            cout << "(A) Void\n(B) Floating\n(C) Fixed\n(D) Integral\n";
 
             opt = toupper(withdrawing(2, 4));
 
-            if (opt == 'A')
+            if (opt == 'B')
             {
                 correct_answer(2, 8);
             }
@@ -269,16 +238,12 @@ void round2()
         break;
         case 4: // question 4 of round 1
         {
-            cout << "what rocks?" << endl;
-            cout << "A.rock"
-                 << " "
-                 << " B.IIRS "
-                 << "C.BITS "
-                 << "D.me" << endl;
+            cout << "Variable names must begin with ___\n";
+            cout << "(A) #\n(B) $\n(C) Number\n(D) Letter\n";
 
             opt = toupper(withdrawing(2, 8));
 
-            if (opt == 'A')
+            if (opt == 'D')
             {
                 correct_answer(2, 16);
             }
@@ -290,16 +255,12 @@ void round2()
         break;
         case 5: // question 5 of round 1
         {
-            cout << "how many domestic campuses does bits have?" << endl;
-            cout << "A.2"
-                 << " "
-                 << " B.none of my business "
-                 << "C.4 "
-                 << "D.3" << endl;
+            cout << "Integer values are stored in ___ bit format in binary form.\n";
+            cout << "(A) 8\n(B) 16\n(C) 32\n(D) 64\n";
 
             opt = toupper(withdrawing(2, 16));
 
-            if (opt == 'A')
+            if (opt == 'B')
             {
                 correct_answer(2, 5);
             }
@@ -330,16 +291,12 @@ void Final_round()
         {
         case 1: // question 1 of round 1
         {
-            cout << "where is IIRS?" << endl;
-            cout << "A.Delhi"
-                 << " "
-                 << " B.dehradun "
-                 << "C.jaipur "
-                 << "D.pilani" << endl;
+            cout << "Which one of the following is a membership operator?\n";
+            cout << "(A) !\n(B) &\n(C) ::\n(D) .\n";
 
-            opt = withdrawing(3, 32);
+            opt = toupper(withdrawing(3, 32));
 
-            if (opt == 'A')
+            if (opt == 'C')
             {
                 correct_answer(3, 64);
             }
@@ -352,16 +309,12 @@ void Final_round()
 
         case 2: // question 2 of round 1
         {
-            cout << "opposite of good?" << endl;
-            cout << "A.bad"
-                 << " "
-                 << " B.excellent "
-                 << "C.outstanding "
-                 << "D.rubbish" << endl;
+            cout << "____ Operator requires two operands.\n";
+            cout << "(A) Logical\n(B) Binary\n(C) Unary\n(D) Ternary\n";
 
-            opt = withdrawing(3, 64);
+            opt = toupper(withdrawing(3, 64));
 
-            if (opt == 'A')
+            if (opt == 'B')
             {
                 correct_answer(3, 125);
             }
@@ -373,16 +326,12 @@ void Final_round()
         break;
         case 3: // question 3 of round 1
         {
-            cout << "palindrome?" << endl;
-            cout << "A.tht"
-                 << " "
-                 << " B.deh "
-                 << "C.jaipur "
-                 << "D.pi" << endl;
+            cout << "____ Type is used to declare a generic pointer in C++.\n";
+            cout << "(A) Int\n(B) Void\n(C) Static\n(D) Float\n";
 
-            opt = withdrawing(3, 125);
+            opt = toupper(withdrawing(3, 125));
 
-            if (opt == 'A')
+            if (opt == 'B')
             {
                 correct_answer(3, 250);
             }
@@ -394,14 +343,10 @@ void Final_round()
         break;
         case 4: // question 4 of round 1
         {
-            cout << "what rocks?" << endl;
-            cout << "A.rock"
-                 << " "
-                 << " B.IIRS "
-                 << "C.BITS "
-                 << "D.me" << endl;
+            cout << "Built in Data type is also called as ___ data type.\n";
+            cout << "(A) Fundamental\n(B) Secondary\n(C) Void\n(D) Integer\n";
 
-            opt = withdrawing(3, 250);
+            opt = toupper(withdrawing(3, 250));
 
             if (opt == 'A')
             {
@@ -415,16 +360,15 @@ void Final_round()
         break;
         case 5: // question 5 of round 1
         {
-            cout << "how many domestic campuses does bits have?" << endl;
-            cout << "A.2"
-                 << " "
-                 << " B.none of my business "
-                 << "C.4 "
-                 << "D.3" << endl;
+            cout << "What is a file?\n";
+            cout << "(A) A file is a selection of main storage used to store data.\n"
+                 << "(B) A file is another name for floppy disk.\n"
+                 << "(C) A file is a part of a program that is used to describe what the program should do.\n"
+                 << "(D) A file is a collection of information that has been given a name and is stored in secondary memory.\n";
 
-            opt = withdrawing(3, 500);
+            opt = toupper(withdrawing(3, 500));
 
-            if (opt == 'A')
+            if (opt == 'D')
             {
                 correct_answer(3, 1000);
             }
@@ -448,17 +392,20 @@ void correct_answer(int round_no, int level)
             system("cls");
             cout << "correct";
             cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
-            cout << "\t\tyou have $ " << level * 100;
+            cout << "\t\tyou have $ " << level * 100 << "\n";
             getch();
         }
     }
-    else
+    else if (round_no == 2 || round_no == 3)
     {
-        system("cls");
-        cout << "correct";
-        cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
-        cout << "\t\tyou have $ " << level * 1000 << "\n";
-        getch();
+        if (level != 5)
+        {
+            system("cls");
+            cout << "correct";
+            cout << "\n\n\n \t\t********* CONGRATULATION ********\n\n";
+            cout << "\t\tyou have $ " << level * 1000 << "\n";
+            getch();
+        }
     }
 
     if (level == 5)
